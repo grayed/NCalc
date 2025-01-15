@@ -20,6 +20,6 @@
 
 namespace NCalc;
 
-public record PhaseCurrent(string Value, string Degree) {
-    public override string ToString() => $"{Value}A {Degree}°";
+public record PhaseCurrent(string Current, string Degree) {
+    public override string ToString() => $"{Current}A {Degree}°";   // TODO localization
 }
