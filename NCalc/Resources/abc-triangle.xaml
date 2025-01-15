@@ -1,0 +1,92 @@
+<!--
+Copyright 2025 Vadim Zhukov <persgray@gmail.com>
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the “Software”),
+to deal in the Software without restriction, including without limitation
+the rights to use, copy, modify, merge, publish, distribute, sublicense,
+and/or sell copies of the Software, and to permit persons to whom
+the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,
+DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR
+OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR
+THE USE OR OTHER DEALINGS IN THE SOFTWARE.using System.Globalization;
+-->
+
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+                    xmlns:local="clr-namespace:NCalc"
+                    >
+    <DrawingGroup x:Key="abc_triangle_input">
+        <DrawingGroup.ClipGeometry>
+            <RectangleGeometry Rect="0.0,0.0,210.0,297.0"/>
+        </DrawingGroup.ClipGeometry>
+        <DrawingGroup>
+            <GeometryDrawing>
+                <GeometryDrawing.Pen>
+                    <Pen Brush="#ff000000" Thickness="0.50000003" DashCap="Round" EndLineCap="Round" StartLineCap="Round">
+                        <Pen.DashStyle>
+                            <DashStyle Dashes=""/>
+                        </Pen.DashStyle>
+                    </Pen>
+                </GeometryDrawing.Pen>
+                <GeometryDrawing.Geometry>
+                    <PathGeometry Figures="M 15.0008 4.96454 V 14.965" FillRule="Nonzero"/>
+                </GeometryDrawing.Geometry>
+            </GeometryDrawing>
+            <GeometryDrawing>
+                <GeometryDrawing.Pen>
+                    <Pen Brush="#ff000000" Thickness="0.50000003" DashCap="Round" EndLineCap="Round" StartLineCap="Round">
+                        <Pen.DashStyle>
+                            <DashStyle Dashes=""/>
+                        </Pen.DashStyle>
+                    </Pen>
+                </GeometryDrawing.Pen>
+                <GeometryDrawing.Geometry>
+                    <PathGeometry Figures="M 23.6441 19.9653 L 15.0398 14.9976" FillRule="Nonzero"/>
+                </GeometryDrawing.Geometry>
+            </GeometryDrawing>
+            <GeometryDrawing>
+                <GeometryDrawing.Pen>
+                    <Pen Brush="#ff000000" Thickness="0.50000003" DashCap="Round" EndLineCap="Round" StartLineCap="Round">
+                        <Pen.DashStyle>
+                            <DashStyle Dashes=""/>
+                        </Pen.DashStyle>
+                    </Pen>
+                </GeometryDrawing.Pen>
+                <GeometryDrawing.Geometry>
+                    <PathGeometry Figures="M 15.0008 15.0008 L 6.40447 19.9638" FillRule="Nonzero"/>
+                </GeometryDrawing.Geometry>
+            </GeometryDrawing>
+            <GeometryDrawing Brush="#ff000000">
+                <GeometryDrawing.Geometry>
+                    <PathGeometry Figures="m 18.7905 8.64604 l -0.47044 -1.20892 h -1.54808 l -0.464971 1.20892 h -0.497791 l 1.5262 -3.92216 h 0.443089 l 1.52073 3.92216 z M 17.7348 5.81793 q -0.01641 -0.043762 -0.0547 -0.158637 q -0.03829 -0.114875 -0.07658 -0.23522 q -0.03282 -0.125815 -0.0547 -0.191458 q -0.03829 0.169577 -0.08752 0.333685 q -0.04923 0.158637 -0.08205 0.251631 l -0.44309 1.18157 h 1.23627 z" FillRule="Nonzero"/>
+                </GeometryDrawing.Geometry>
+            </GeometryDrawing>
+            <GeometryDrawing Brush="#ff000000">
+                <GeometryDrawing.Geometry>
+                    <PathGeometry Figures="m 22.982 14.1939 q -0.629078 0 -0.990114 0.421209 q -0.361036 0.421208 -0.361036 1.15422 q 0 0.727542 0.333685 1.15422 q 0.339155 0.421208 1.01199 0.421208 q 0.257101 0 0.486851 -0.04376 q 0.22975 -0.04376 0.44856 -0.109404 v 0.426678 q -0.21881 0.08205 -0.45403 0.120346 q -0.22975 0.03829 -0.552495 0.03829 q -0.596256 0 -0.995583 -0.24616 q -0.399328 -0.246161 -0.601727 -0.700191 q -0.196928 -0.45403 -0.196928 -1.0667 q 0 -0.590786 0.213339 -1.03935 q 0.21881 -0.45403 0.640018 -0.705661 q 0.421209 -0.257101 1.02293 -0.257101 q 0.618137 0 1.07764 0.22975 l -0.196928 0.415738 q -0.180518 -0.08205 -0.404798 -0.147696 q -0.21881 -0.06564 -0.481381 -0.06564 z" FillRule="Nonzero"/>
+                </GeometryDrawing.Geometry>
+            </GeometryDrawing>
+            <GeometryDrawing Brush="#ff000000">
+                <GeometryDrawing.Geometry>
+                    <PathGeometry Figures="m 7.38385 13.7618 q 0.733012 0 1.10499 0.218809 q 0.377447 0.21334 0.377447 0.749423 q 0 0.344625 -0.191458 0.574375 q -0.191458 0.22428 -0.552494 0.289923 v 0.02735 q 0.246161 0.03829 0.443089 0.142227 q 0.202399 0.103934 0.317274 0.295393 q 0.114875 0.191458 0.114875 0.497791 q 0 0.530614 -0.366506 0.820536 q -0.361036 0.289923 -0.990113 0.289923 H 6.26792 v -3.90575 z m 0.098464 1.66295 q 0.503262 0 0.68925 -0.158637 q 0.185988 -0.164107 0.185988 -0.481381 q 0 -0.322744 -0.22975 -0.4595 Q 7.90352 14.183 7.40573 14.183 H 6.76024 v 1.24175 z m -0.722072 0.410268 v 1.41679 h 0.787715 q 0.519673 0 0.722072 -0.202399 q 0.202399 -0.202399 0.202399 -0.530613 q 0 -0.306334 -0.213339 -0.492322 q -0.207869 -0.191458 -0.749423 -0.191458 z" FillRule="Nonzero"/>
+                </GeometryDrawing.Geometry>
+            </GeometryDrawing>
+            <GeometryDrawing Brush="#ff000000">
+                <GeometryDrawing.Geometry>
+                    <EllipseGeometry RadiusX="0.92861879" RadiusY="0.92861879" Center="14.958473,14.922759"/>
+                </GeometryDrawing.Geometry>
+            </GeometryDrawing>
+        </DrawingGroup>
+    </DrawingGroup>
+    <DrawingImage Drawing="{StaticResource abc_triangle_input}" x:Key="abc_triangle"/>
+</ResourceDictionary>
